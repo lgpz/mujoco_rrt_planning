@@ -96,7 +96,7 @@ class RRTPlanner:
 
         for obstacle in self.obstacles:
             size = obstacle.get_radius()
-            plt.plot(*obstacle.get_center().get_t(), "ok", ms=800 * size)
+            plt.plot(*obstacle.get_center().get_t(), "ok", ms=800 / 40 * size)
 
         plt.plot(*self.start.get_t(), 'xr')
         plt.plot(*self.goal.get_t(), 'xr')
