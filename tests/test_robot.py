@@ -13,7 +13,7 @@ from src.robot import Robot
 
 if __name__ == '__main__':
 
-    model = load_model_from_path("../../assets/universal_robots_ur5e/scene.xml")
+    model = load_model_from_path("../assets/universal_robots_ur5e/scene.xml")
     sim = MjSim(model)
     viewer = MjViewer(sim)
 
